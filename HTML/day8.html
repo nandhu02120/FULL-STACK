@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="class">Hello, World!</h1>
+    <br>
+    <p>This is a simple HTML document.</p>
+    <div class="devision-block">
+        <h1>nani</h1>
+        <p>jdhgvfjsdgiuyfgis</p>
+        </div>
+    <button onclick="diss()">click</button>
+    <button onclick="f()"class="nani">Click Me</button>
+    <script>
+        function f(){
+           
+        
+    if(document.getElementById("class").style.backgroundColor === "white"){
+        document.getElementById("class").style.backgroundColor = "yellow";
+    }
+    else if(document.getElementById("class").style.backgroundColor = "yellow"){
+        document.getElementById("class").style.backgroundColor = "pink";
+    }
+
+    else{
+        document.getElementById("class").style.backgroundColor = "white";
+    }
+}
+function f(){
+                let a=document.body.style.backgroundColor;
+                setInterval(() =>{
+                    document.body.style.backgroundColor=document.body.style.backgroundColor==='red' ? 'blue' : 'red';
+                },100)}
+function diss(){
+    let div=document.querySelector(`.devision-block`);
+    if(div.style.style==='none'){
+        div.style.display='block';
+    }
+    else{
+        div.style.display='none';
+    }
+    }
+
+
+        
+    </script>
+</body>
+</html>

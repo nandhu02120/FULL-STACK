@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont1{
+            background-color: aqua;
+            padding: 20px;
+            margin: 5px;}
+            .cont2{
+            background-color: rgb(10, 235, 14);
+            padding: 20px;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cont1">
+    <h1> heading</h1>
+    <p>ok bhanu</p>
+     <button onclick="fe()">click me</button>
+</div>
+<div class="cont2">
+    <h1> heading</h1>
+    <p>ok bhanu</p>
+</div>
+    <button onclick="fe1()">click me</button>
+    <a href="http://www.google.com">link</a>
+     <button onclick="f()">click me</button>
+    <script>
+        function f(){
+        let a=document.getElementsByTagName('a');
+        a[0].setAttribute('href',"http://www.youtube.com");
+        }
+        function fe(){
+        const a=document.querySelectorAll(".cont1");
+        a.forEach(element =>{
+            element.setAttribute("class","cont2");
+        });
+        } 
+        function fe1(){
+        const a=document.querySelectorAll(".cont2");
+        a.forEach(element =>{
+            element.setAttribute("class","cont1");
+        });
+        } 
+
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        p {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1>heading 1</h1>
+        <p>paragraph 1</p>
+    </div>
+    <script>
+        let a=document.getElementById("div");
+        a.addEventListener("click", function() {
+            a.innerText=("Div Clicked!");
+            a.style.backgroundColor = "lightgreen";
+        });
+        a.addEventListener("mouseover", function() {
+            a.innerHTML = "Mouse inside Detected!";
+            a.style.backgroundColor = "red";
+        });
+        a.addEventListener("mouseout", function() {
+            a.innerHTML = "Mouse Outer Detected!";
+            a.style.backgroundColor = "blue";
+        });
+        a.addEventListener("mousedown", function() {
+            a.innerHTML = "Mouse down Detected!";
+            a.style.backgroundColor = "pink";
+        });
+    </script>
+   
+    
+</body>
+</html>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+            border: 2px solid rgb(0, 0, 0);
+        }
+        h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+    </div>
+    <input type="text" id="input" placeholder="Type something here...">
+    <input type="reset" value="Reset" id="reset">
+    <input type="submit" value="Submit" id="submit">
+    <script>
+        let input = document.getElementById("input");
+        let reset = document.getElementById("reset");
+        let submit = document.getElementById("submit");
+        reset.addEventListener("click", function() {
+            input.value = "";
+            input.style.backgroundColor = "white";
+        });
+        submit.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Form submitted with value: " + input.value);
+        });
+</script>
+</body>
+</html>
+
+
+

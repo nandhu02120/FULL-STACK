@@ -1,0 +1,39 @@
+p{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 0.1;
+    line-height: 1
+    ;
+}
+.a{
+    background-color: #ff6a2a
+}
+.b{
+    background-color: rgb(250, 250, 250);
+}
+.c{
+    background-color: rgb(16, 255, 64);
+}
+button{
+    background-color: rgb(43, 226, 195);
+    color: black;
+    height: 50px;
+    width: 250px;
+    padding: 30px;
+    border: rgb(195, 7, 39);
+    border-color: rgb(0, 37, 1);
+    border-radius: 40px 200px 305px 300px;
+    margin: 200px 120px 100px 100px; 
+    box-shadow: 0px 0px 0px rgb(204, 32, 20);
+   
+    outline-style: dashed 5px;
+    outline-color: crimson;
+    border-style: dotted;
+}
+button:hover{
+    
+    box-shadow: #ff6a2a;
+    cursor: pointer;
+    border: 2px rgb(27, 210, 20);
+}

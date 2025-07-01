@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+div{
+    width: 50px;
+    height: 50px;
+    border: red;
+   background-color: blue;
+   animation: myAnimation 10s infinite alternate;
+   justify-content: space-around;
+   text-align: center;
+   align-items: center;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+animation-direction: reverse;
+gap: 1000px;}
+ @keyframes myAnimation {
+    0% {
+        left: 0px;
+        background-color: rgb(255, 130, 14);
+        opacity: 1;
+        transform: translateX(0PX);
+        transform: translateY(150PX);
+        rotate: 360deg;
+}
+ 50% {
+        left: 0px;
+        background-color: rgb(223, 8, 8);
+        opacity: 1;
+        transform: translateX(200px);
+        border-radius: 100%;
+        rotate: 360deg;
+
+}
+100% {
+        left: 0px;
+        background-color: rgb(33, 239, 6);
+        opacity: 1;
+        border-radius: 100%;
+        rotate: 360deg;
+
+}}
+.one{
+    width: 50px;
+    height: 50px;
+    border: red;
+   background-color: blue;
+   animation: myAn 10s infinite alternate;
+   justify-content: space-around;
+   text-align: center;
+   align-items: center;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+animation-direction: reverse;
+gap: 1000px;}
+@keyframes myAn {
+    0% {
+        left: 0px;
+        background-color: rgb(13, 10, 207);
+        opacity: 1;
+        transform: translateX(100PX);
+        transform: translateY(0);
+        rotate: 159deg;
+}
+20% {
+        left: 50px;
+        background-color: rgb(44, 208, 249);
+        opacity: 1;
+        transform: translateX(-200px);
+        rotate: 45deg;}
+ 50% {
+        left: 100px;
+        background-color: rgb(44, 208, 249);
+        opacity: 1;
+        border-radius: 100%;
+        transform: translateX(-200px);
+        rotate: 45deg;
+
+}
+100% {
+        left: 150px;
+        background-color: rgb(230, 3, 200);
+        opacity: 1;
+        border-radius: 100%;
+        rotate: 360deg;
+}}
+    </style>
+</head>
+<body>
+    <div>1
+    </div>
+    <div class="one">1
+    </div>
+</body>
+</html>

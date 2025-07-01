@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: white;
+        font-family: Arial, sans-serif;
+        color: #1eff00;
+        text-align: center;
+    }
+    h1 {
+        color: #c800ff;
+        text-align: center;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+        display: inline-block;
+    }
+    .white-text{
+        color: white;
+        padding: 0.5em 1em;
+        text-align: center;
+        border-radius: 4px;
+        display: inline-block;
+        background-color: darkgreen;
+    }
+    .color-btn {
+        margin: 1em;
+        padding: 0.5em 1.5em;
+        font-size: 1em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(170, 0, 255);
+        color: white;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>Welcome to style demo</h1>
+    <p>This is a paragraph demonstrating the styles applied to this document</p>
+    <p class="white-text">This is a paragraph with white text on a green beckground</p>
+    <button class="color-btn" onclick="changeColors()">Change Colors</button>
+    <script>
+
+        function changeColors() {
+            let a=document.body.style.backgroundColor;
+            setInterval(() => {
+                a = a === "red" ? "blue" : "red";
+                document.body.style.backgroundColor = a;
+            }, 200); // Change color every second
+        }
+    </script>
+</body>

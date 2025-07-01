@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>This is the container to be removed.</p>
+    </div>
+    <button onclick="f()">Remove Container & Add Heading</button>
+    <button onclick="reload()">reload page</button>
+    <button onclick="remove()">remove head</button>
+    <script>
+        function f() {
+            const firstContainer = document.querySelector(".container");
+            if (firstContainer) {
+                firstContainer.parentNode.removeChild(firstContainer);
+            }
+            const newHeading = document.createElement("h1");
+            newHeading.innerText = "New Heading";
+            document.body.insertBefore(newHeading, document.body.firstChild);
+            const newHeading = document.removeChild("h1");
+            newHeading.innerText = "New Heading";
+            document.body.remove(newHeading, document.body.firstChild);
+        }
+        function reload(){
+            location.reload();
+        }
+        function remove(){
+            h1.remove();
+        }
+    </script>
+</body>
+</html>

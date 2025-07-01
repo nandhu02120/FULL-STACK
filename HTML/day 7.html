@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="gr">HII THERE</p>
+    <h1 class="nsni"> this is the heading</h1>
+    <INPUT type="text" id="np" placeholder="Enter the text">
+        <button onclick="f()">greet</button>
+    <script>
+       
+        function f() {
+            const name= document.getElementById("np").value;
+            document.getElementByclassName("nsni")[0].innerHTML=`Hello,${name}!`;
+            document.getElementById("np").value;
+            document.getElementById("gr").innerText=`Hello,${name}!`;
+            document.getElementByTagName("gr").innerTeXT =`Hello,${name}!`;}
+        </script>
+
+</body>
+</html>
