@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="color" placeholder="Enter a color name">
+    <button onclick="f()">Submit</button>
+</body>
+<script>
+    ocument.body.addEventListener("keydown",function(event){
+        let color=event.key;
+        switch(color){
+            case "w":
+                document.body.style.backgroundColor="white"
+                break;
+            case "r":
+                document.body.style.backgroundColor="red"
+                break;
+            case "g":
+                document.body.style.backgroundColor="green"
+                break;
+            case "b":
+                document.body.style.backgroundColor="blue"
+                break;
+            case "y":
+                document.body.style.backgroundColor="yellow"
+                break;
+            case "a":
+                document.body.style.backgroundColor="aqua"
+                break;
+            case "p":
+                document.body.style.backgroundColor="deeppink"
+                break;
+        }
+    })
+    function f(){
+        const color =document.getElementById('color').value
+        document.body.style.backgroundColor=color;
+    }
+
+
+</script>
+</html>

@@ -14,6 +14,15 @@
     document.body.addEventListener("keydown" ,function(event){
         document.body.style.backgroundColor= "orange";
     })
+     document.body.addEventListener("keydown" ,function(event){
+      if(event.key==="Enter"){
+        alert("Enter click")
+      }
+      else{
+      document.getElementById("cont").innerHTML += event.code+"<br>"
+      }
+      })
+      
   </script>
 </body>
 </html>
